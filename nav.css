@@ -1,0 +1,152 @@
+li {
+    list-style: none;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none !important;
+  }
+  
+    
+  .menu li:hover {
+    background-color: #cc9317;
+    border-radius: 5px;
+    transition: 0.3s ease; 
+  }
+    
+  .menu li {    
+    padding: 5px 14px;
+  }
+  
+  .menu a {    
+    direction: none;
+  }
+  
+  input[type=checkbox]{
+    display: none;
+  } 
+    
+  .menumenu {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+  }
+  
+  .menu { 
+    display: none;   
+  }
+  
+  @media (max-width: 768px) {
+  
+    
+    .menumenu {
+        position:absolute; 
+        bottom: 600px; 
+        right: 50px;
+    }
+  
+    .menu { 
+        position: absolute;
+        z-index: 10000;
+        margin: 0 auto;
+        position: absolute;
+        width: 100%;
+        background-color: white !important;
+        color: black;
+        top: 0;
+        right: 0;
+        max-width: 100vh;    
+        height: 100vh;
+        text-align: center;
+        gap: 1em;
+        font-size: 18px;
+        
+    }
+    
+    .menu li:hover {
+    
+    display: inline-block;
+    
+    background-color:#ffffff;
+    color: white;
+    transition: 0.3s ease;
+    
+    }
+    
+    .menu li + li {
+    
+    margin-top: 12px;
+    
+    }
+    
+    input[type=checkbox]:checked ~ .menu{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden !important;
+    }
+    
+    .menumenu {
+    
+    display: block;
+    position: absolute;
+    top: 1rem;
+    
+    }
+  
+    #navegacion{
+        display: none;
+    }
+  
+    #imagenes{
+        display: none;
+    }
+  
+    #dreamL{
+        display: none;
+    }
+  
+    nav {
+        max-width: 100vh;
+      
+      }
+  
+    .body{
+      overflow-x: none !important;
+    }
+  
+  
+    #get-started {
+      padding: 0;
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+  
+    .imagenes-tr{
+      margin-top: 30rem;
+    }
+  
+    .container-card{
+      width: 35vh !important;
+    }
+  
+    .testimonios-titulo{
+      margin-top: 10rem;
+    }
+  
+    #testimonios-text{
+      font-size: 3rem;
+    }
+  
+  }
+  
+  #navegacion {
+    color: var(--main-font-color) !important;
+  }
